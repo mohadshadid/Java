@@ -1,12 +1,12 @@
-package com.example.services;
+package com.services;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.models.Book;
-import com.example.repositories.BookRepository;
+import com.models.Book;
+import com.repositories.BookRepository;
 
 @Service
 public class BookService {
@@ -33,21 +33,11 @@ public class BookService {
             return null;
         }
     }
-	public Book updateBook(Long id, String title, String desc, String lang, Integer numOfPages) {
-		Book book = findBook(id);
-		book.setTitle(title);
-		book.setDescription(desc);
-		book.setLanguage(lang);
-		book.setNumberOfPages(numOfPages);
-		
-		book=bookRepository.save(book);
-		return book;
-	}
-		public void deleteBook(Long id) {
-			bookRepository.deleteById(id);
-		
-		
+    
+    public Book updateBook(Book book) {
+        return bookRepository.save(book);
+    }
+    public void deleteBook(long id) {
+    	bookRepository.deleteById(id);
+    }
 }
-	
-		
-	}

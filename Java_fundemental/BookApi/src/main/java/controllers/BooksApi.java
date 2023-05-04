@@ -1,4 +1,4 @@
-package com.example.controllers;
+package controllers;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.models.Book;
-import com.example.services.BookService;
+import com.models.Book;
+import com.services.BookService;
 
 @RestController
 public class BooksApi {
@@ -41,7 +41,10 @@ public class BooksApi {
     		@RequestParam(value="description") String desc, 
     		@RequestParam(value="language") String lang,
     		@RequestParam(value="pages") Integer numOfPages) {
-        Book book = bookService.updateBook(id, title, desc, lang, numOfPages);
+    	
+    	Book book = new Book(title,desc,lang, numOfPages);
+    	book.setId(id);
+         bookService.updateBook(book);
         return book;
     }
     

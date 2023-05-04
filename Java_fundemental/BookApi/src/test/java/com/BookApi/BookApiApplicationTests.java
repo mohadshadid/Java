@@ -1,10 +1,10 @@
-package com.example.BookApi;
+package com.BookApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BooksApiApplicationTests {
+class BookApiApplicationTests {
 
 	@Test
 	void contextLoads() {
