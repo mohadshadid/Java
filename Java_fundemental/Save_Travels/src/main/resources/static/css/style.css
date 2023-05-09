@@ -1,0 +1,82 @@
+/* Global Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a:link {
+  text-decoration: none;
+  
+}
+a:hover {
+  background-color: lightgreen;
+}
+a:active {
+  background-color: hotpink;
+}
+
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 100%;
+}
+
+input[type="number"] {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 50%;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+.errors {
+  color: red;
+  margin-bottom: 10px;
+}

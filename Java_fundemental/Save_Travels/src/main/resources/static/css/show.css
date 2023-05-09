@@ -1,0 +1,42 @@
+
+/* CSS for the header section */
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display :flex ;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header a {
+  color: #fff;
+}
+
+/* CSS for the main content */
+div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* CSS for links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
